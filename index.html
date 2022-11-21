@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Panda</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!-- Блок Preloader -->
+<div class="preloader">
+  <!-- Добавляем готовую структуру Preloader -->
+  <div class="sk-chase">
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+  </div>
+</div>
+ <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="#main">
+        <picture class="logo">
+          <source
+            type="image/avif"
+            srcset="images/logo.avif 1x, images/logo@2x.avif 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="images/logo.webp 1x, images/logo@2x.webp 2x"
+          />
+          <img loading="lazy" src="images/logo.png" alt="" />
+        </picture>
+      </a>
+
+      <button class="header__burger">
+        <span class="header__burger-line-1 header__burger-line"></span>
+        <span class="header__burger-line-2 header__burger-line"></span>
+        <span class="header__burger-line-3 header__burger-line"></span>
+      </button>
+
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#main">Home</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#cards">Services</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#slider">Reviews</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#blog">Article</a>
+          </li>
+          <a class="header__btn" href="#start">Register</a>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <section class="header-one" id="main">
+  <svg class="header-one__decor-1">
+    <use xlink:href="images/sprite/sprite.svg#decor-1"></use>
+  </svg>
+  <svg class="header-one__decor-2">
+    <use xlink:href="images/sprite/sprite.svg#decor-2"></use>
+  </svg>
+  <div class="header-one__inner">
+    <div class="header__content">
+      <h1 class="header-one__title" data-aos="fade-up">
+        Right Social Networking for Marketing
+      </h1>
+      <h4 class="header-one__subtitle" data-aos="fade-up">
+        Are you looking for amazing medical center? Don’t worry! We got it for
+        you!
+      </h4>
+      <a class="header-one__btn" data-aos="fade-up" href="#">Learn More</a>
+    </div>
+    <picture class="header-one__img" data-aos="fade-up">
+      <source
+        type="image/avif"
+        srcset="images/header-one/1.avif 1x, images/header-one/1@2x.avif 2x"
+      />
+      <source
+        type="image/webp"
+        srcset="images/header-one/1.webp 1x, images/header-one/1@2x.webp 2x"
+      />
+      <img loading="lazy" src="images/header-one/1.jpg" alt="" />
+    </picture>
+  </div>
+</section>
+ <section class="cards" id="cards">
+  <div class="container">
+    <div class="cards__inner">
+      <div class="cards__text" data-aos="fade-up">
+        <h2 class="cards__title cards__title-1 title">
+          Be at the forefront of
+        </h2>
+        <h2 class="cards__title cards__title-2 title">the new innovation</h2>
+        <h4 class="cards__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod
+          ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h4>
+      </div>
+      <div class="cards__items">
+        <div class="cards__item" data-aos="fade-right" data-aos-delay="500">
+          <svg class="cards__item-img">
+            <use xlink:href="images/sprite/sprite.svg#card-1"></use>
+          </svg>
+          <h3 class="cards__item-title">Seo Consultancy</h3>
+          <p class="cards__item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <a class="cards__item-btn" href="#">Learn More</a>
+        </div>
+        <div class="cards__item" data-aos="fade-right" data-aos-delay="1000">
+          <svg class="cards__item-img">
+            <use xlink:href="images/sprite/sprite.svg#card-2"></use>
+          </svg>
+          <h3 class="cards__item-title">Seo Consultancy</h3>
+          <p class="cards__item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <a class="cards__item-btn" href="#">Learn More</a>
+        </div>
+        <div class="cards__item" data-aos="fade-left" data-aos-delay="1500">
+          <svg class="cards__item-img">
+            <use xlink:href="images/sprite/sprite.svg#card-3"></use>
+          </svg>
+          <h3 class="cards__item-title">Seo Consultancy</h3>
+          <p class="cards__item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <a class="cards__item-btn" href="#">Learn More</a>
+        </div>
+        <div class="cards__item" data-aos="fade-left" data-aos-delay="2000">
+          <svg class="cards__item-img">
+            <use xlink:href="images/sprite/sprite.svg#card-4"></use>
+          </svg>
+          <h3 class="cards__item-title">Seo Consultancy</h3>
+          <p class="cards__item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <a class="cards__item-btn" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about" id="about">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__imgwrapper" data-aos="fade-up">
+        <picture class="about__img">
+          <source
+            type="image/avif"
+            srcset="
+              images/about/about-1.avif    1x,
+              images/about/about-1@2x.avif 2x
+            "
+          />
+          <source
+            type="image/webp"
+            srcset="
+              images/about/about-1.webp    1x,
+              images/about/about-1@2x.webp 2x
+            "
+          />
+          <img loading="lazy" src="images/about/about-1.jpg" alt="" />
+        </picture>
+      </div>
+      <div class="about__content" data-aos="fade-down">
+        <h4 class="about__subtitle">Who We Are</h4>
+        <h2 class="about__title title">
+          We Solve Better Digital Marketing Solution
+        </h2>
+        <p class="about__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting has
+          been the industry’s standard dummy text. Vivamus ullam corper text of
+          the printing and typesetting
+        </p>
+        <p class="about__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting has
+          been the industry’s standard dummy text.
+        </p>
+        <div class="about__items">
+          <div class="about__item">
+            <span class="about__num-1">456+</span>
+            <p>Global Presence</p>
+          </div>
+          <div class="about__item">
+            <span class="about__num-2">100%</span>
+            <p>Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="gallery">
+  <div class="container">
+    <div class="gallery__inner" data-aos="flip-left">
+      <h2 class="gallery__title title">Gallery</h2>
+      <div class="gallery__wrapper">
+        <div class="gallery__items">
+          <a class="item-1" href="#">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/gallery/1.avif 1x, images/gallery/1@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="images/gallery/1.webp 1x, images/gallery/1@2x.webp 2x"
+              />
+              <img loading="lazy" src="images/gallery/1.jpg" alt="" />
+            </picture>
+          </a>
+          <a href="#" class="item-2">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/gallery/2.avif 1x, images/gallery/2@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="images/gallery/2.webp 1x, images/gallery/2@2x.webp 2x"
+              />
+              <img loading="lazy" src="images/gallery/2.jpg" alt="" />
+            </picture>
+          </a>
+          <a href="#" class="item-4">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/gallery/4.avif 1x, images/gallery/4@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="images/gallery/4.webp 1x, images/gallery/4@2x.webp 2x"
+              />
+              <img loading="lazy" src="images/gallery/4.jpg" alt="" />
+            </picture>
+          </a>
+          <a href="#" class="item-3">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/gallery/3.avif 1x, images/gallery/3@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="images/gallery/3.webp 1x, images/gallery/3@2x.webp 2x"
+              />
+              <img loading="lazy" src="images/gallery/3.jpg" alt="" />
+            </picture>
+          </a>
+          <a href="#" class="item-5">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/gallery/5.avif 1x, images/gallery/5@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="images/gallery/5.webp 1x, images/gallery/5@2x.webp 2x"
+              />
+              <img loading="lazy" src="images/gallery/5.jpg" alt="" />
+            </picture>
+          </a>
+          <a href="#" class="item-6">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/gallery/6.avif 1x, images/gallery/6@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="images/gallery/6.webp 1x, images/gallery/6@2x.webp 2x"
+              />
+              <img loading="lazy" src="images/gallery/6.jpg" alt="" />
+            </picture>
+          </a>
+          <a href="#" class="item-7">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/gallery/7.avif 1x, images/gallery/7@2x.avif 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="images/gallery/7.webp 1x, images/gallery/7@2x.webp 2x"
+              />
+              <img loading="lazy" src="images/gallery/7.jpg" alt="" />
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="start" id="start">
+  <div class="container">
+    <div class="start__inner" data-aos="fade-down">
+      <h2 class="start__title title">It’s Easy To Get Started</h2>
+      <p class="start__text">
+        From now on cooperate with us and get satisfactory benefits and benefits
+      </p>
+      <a class="start__btn" href="#">Get Started</a>
+    </div>
+  </div>
+</section>
+ <section class="slider" id="slider">
+  <div class="container">
+    <div class="slider__inner">
+      <div class="slider__maintext" data-aos="fade-right">
+        <h4 class="slider__subtitle">Testimonial</h4>
+        <h2 class="slider__title title">Some Good Talk About Us</h2>
+        <p class="slider__text">
+          What they say about us, find out here for your reference to us
+        </p>
+      </div>
+      <div class="slider__content" data-aos="fade-left">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <span class="slider__qua">“</span>
+              <p class="slider__content-text">
+                Lots of interesting experiences during my vacation with Ulin
+                Agency plus a tour guide who is very skilled at explaining the
+                history of the place and the myths that circulate make me enjoy
+                this trip even more
+              </p>
+              <div class="slider__info">
+                <div class="slider__wrapper-img">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        images/slider/1.avif    1x,
+                        images/slider/1@2x.avif 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        images/slider/1.webp    1x,
+                        images/slider/1@2x.webp 2x
+                      "
+                    />
+                    <img loading="lazy" src="images/slider/1.png" alt="" />
+                  </picture>
+                </div>
+                <div class="slider__info-content">
+                  <span class="slider__name">Yasmine Sucene</span>
+                  <span class="slider__country">Poland</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <span class="slider__qua">“</span>
+              <p class="slider__content-text">
+                Lots of interesting experiences during my vacation with Ulin
+                Agency plus a tour guide who is very skilled at explaining the
+                history of the place and the myths that circulate make me enjoy
+                this trip even more
+              </p>
+              <div class="slider__info">
+                <div class="slider__wrapper-img">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        images/slider/1.avif    1x,
+                        images/slider/1@2x.avif 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        images/slider/1.webp    1x,
+                        images/slider/1@2x.webp 2x
+                      "
+                    />
+                    <img loading="lazy" src="images/slider/1.png" alt="" />
+                  </picture>
+                </div>
+                <div class="slider__info-content">
+                  <span class="slider__name">Yasmine Sucene</span>
+                  <span class="slider__country">Poland</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <span class="slider__qua">“</span>
+              <p class="slider__content-text">
+                Lots of interesting experiences during my vacation with Ulin
+                Agency plus a tour guide who is very skilled at explaining the
+                history of the place and the myths that circulate make me enjoy
+                this trip even more
+              </p>
+              <div class="slider__info">
+                <div class="slider__wrapper-img">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        images/slider/1.avif    1x,
+                        images/slider/1@2x.avif 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        images/slider/1.webp    1x,
+                        images/slider/1@2x.webp 2x
+                      "
+                    />
+                    <img loading="lazy" src="images/slider/1.png" alt="" />
+                  </picture>
+                </div>
+                <div class="slider__info-content">
+                  <span class="slider__name">Yasmine Sucene</span>
+                  <span class="slider__country">Poland</span>
+                </div>
+              </div>
+            </div>
+            ...
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="blog" id="blog">
+  <div class="container">
+    <div class="blog__inner">
+      <h5 class="blog__subtitle">Our Blog</h5>
+      <div class="blog__topline" data-aos="fade-left">
+        <h2 class="blog__title title">Latest Articles</h2>
+        <a class="blog__btn" href="#">See All</a>
+      </div>
+      <div class="blog__items" data-aos="fade-up">
+        <a class="blog__item" href="#">
+          <picture class="blog__item-img">
+            <source
+              type="image/avif"
+              srcset="images/blog/1.avif 1x, images/blog/1@2x.avif 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="images/blog/1.webp 1x, images/blog/1@2x.webp 2x"
+            />
+            <img loading="lazy" src="images/blog/1.jpg" alt="" />
+          </picture>
+          <h5 class="blog__item-theme">Construction</h5>
+          <h3 class="blog__item-title">
+            Digital Marketing for Real Estate Agents Investment
+          </h3>
+          <h5 class="blog__item-date">Apr 30, 2020</h5>
+        </a>
+        <a class="blog__item" href="#">
+          <picture class="blog__item-img">
+            <source
+              type="image/avif"
+              srcset="images/blog/2.avif 1x, images/blog/2@2x.avif 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="images/blog/2.webp 1x, images/blog/2@2x.webp 2x"
+            />
+            <img loading="lazy" src="images/blog/2.jpg" alt="" />
+          </picture>
+          <h5 class="blog__item-theme">Apartments</h5>
+          <h3 class="blog__item-title">
+            Low-Cost Online Marketing For Real Estate Agents
+          </h3>
+          <h5 class="blog__item-date">Apr 29, 2020</h5>
+        </a>
+        <a class="blog__item" href="#">
+          <picture class="blog__item-img">
+            <source
+              type="image/avif"
+              srcset="images/blog/3.avif 1x, images/blog/3@2x.avif 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="images/blog/3.webp 1x, images/blog/3@2x.webp 2x"
+            />
+            <img loading="lazy" src="images/blog/3.jpg" alt="" />
+          </picture>
+          <h5 class="blog__item-theme">Estate</h5>
+          <h3 class="blog__item-title">
+            History and current housing data point to rise activity
+          </h3>
+          <h5 class="blog__item-date">Apr 28, 2020</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <main class="main"></main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <p class="footer__text">
+          230 Cikidang Street, West Java Sukabumi, Indonesia 44567
+        </p>
+        <a class="footer__phone" href="tel:+629990003232">+62 999 000 3232</a>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <h4 class="footer__item-title">Business</h4>
+          <li class="footer__item">
+            <a class="footer__link" href="#about">About</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Menu</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#cards">Services & Products</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Chefs</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <h4 class="footer__item-title">Resources</h4>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Help Center</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#blog">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#blog">Newsletter</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Careers & Vacancy</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <h4 class="footer__item-title">Get in Touch</h4>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Facebook</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Instagram</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Twitter</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Tiktok</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
